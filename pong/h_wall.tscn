@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://tk3i1kh57wo4"]
+
+[ext_resource type="Script" path="res://h_wall.gd" id="1_jxnm2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2sx36"]
+size = Vector2(621, 20)
+
+[node name="H_Wall" type="Area2D"]
+script = ExtResource("1_jxnm2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(300.5, 0)
+shape = SubResource("RectangleShape2D_2sx36")
